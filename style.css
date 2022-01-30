@@ -8,7 +8,7 @@ nav {
     justify-content: space-around;
     align-items:center;
     min-height:8vh;
-    /* background-color:rgb(196, 196, 196); */
+    background-color:rgb(196, 196, 196);
     font-family: sans-serif;
 }
 
@@ -59,7 +59,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color:rgb(196, 196, 196); */
+    background-color:rgb(196, 196, 196);
     width:50%;
     transform:translateX(100%);
     transition:transform 0.5s ease-in;
