@@ -8,6 +8,7 @@ nav {
     justify-content: space-around;
     align-items:center;
     min-height:8vh;
+    width: 100vw;
     background-color:rgb(196, 196, 196);
     font-family: sans-serif;
 }
