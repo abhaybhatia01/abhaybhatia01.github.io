@@ -21,7 +21,25 @@ const navSlide = () => {
        //burger animation
        burger.classList.toggle("toggle")
     })
-
-
 }
+
+const congratsAnimation=() =>{
+
+    const firstText = document.querySelector('#firstText');
+    const heart = document.querySelector('.heart');
+
+    firstText.addEventListener('click',(e)=>{
+
+
+        heart.classList.toggle("withHeart");
+        heart.classList.toggle("heart");
+
+
+
+    })
+}
+
+
+
+congratsAnimation();
 navSlide();

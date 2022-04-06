@@ -3,6 +3,10 @@
     padding:0px;
     box-sizing: border-box;
 }
+body{
+    font-family:sans-serif;
+    color:pink;
+}
 nav {
     display:flex;
     justify-content: space-around;
@@ -55,50 +59,126 @@ nav {
 .navLinks{
     position:absolute;
     right:0px;
-    top:19vh;
-    height:81vh;
+    top:14vh;
+    height:86vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:rgb(196, 196, 196);
-    width:50%;
+    width:0%;
     transform:translateX(100%);
     transition:transform 0.5s ease-in;
 
+    
 }
-.navLinks li{
-    opacity: 0;
+
+
+.navLink{
+    display:none;
 }
 .burger{
     display:block;
     cursor: pointer;
 }
+
 }
 
 
 .navActive{
     transform:translateX(0%);
+    width:50%;
+
+}
+.navActive .navLink{
+    display:block;
 }
 
 @keyframes navLinkFade {
-    from{
+    0%{
+
         opacity:0;
-        transform:translateX(50px);
+
     }
-    to{
+
+    100%{
+
         opacity:1;
-        transform:translateX(0px);
+        
     }
     
 }
 
 .toggle .line1{
-    transform:rotate(45deg) translate( 5px, 6px);
+    transform:rotate(405deg) translate( 5px, 6px);
 
 }
 .toggle .line2{
     opacity:0;
 }
 .toggle .line3{
-    transform:rotate(-45deg) translate( 5px, -6px);
+    transform:rotate(-405deg) translate( 5px, -6px);
+}
+#mainContent{
+  
+    padding:1.5rem 0rem 0rem 0rem;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+#firstImage, img{
+
+    
+    width:350px;
+    height:auto;
+}
+#firstText{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    padding:1.5rem;
+    border: none;
+    color:rgb(241, 153, 167);
+    border-radius: 7px;;
+    box-shadow: 3px 4px 10px 1px  rgba(128, 128, 128, 0.461);
+
+}
+
+.heart{
+    position:absolute;
+    font-size: 400px;
+    color:red;
+
+    transform: scale(0%);
+}
+
+.withHeart{
+    position:absolute;
+    font-size: 200px;
+    color:red;
+    line-height:0;
+    margin-bottom:120px;
+    animation-duration: 1000ms;
+    animation-name: heartAnimation;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes heartAnimation{ 
+    0% { opacity:0; transform:scale(0); }
+    15% { opacity:.9; transform:scale(1.2); }
+    30% { transform:scale(.95); }
+    80% { opacity:.9; transform:scale(1); }
+  }
+
+#reload{
+ margin-top:6px;
+ color:rgb(241, 153, 167);
+ box-shadow: 2px 2px 7px 0px gray;
+ padding:5px;
+ border-radius:5px;
 }
