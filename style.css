@@ -6,6 +6,7 @@
 body{
     font-family:sans-serif;
     color:pink;
+    margin-bottom:100px;
 }
 nav {
     display:flex;
@@ -133,7 +134,7 @@ nav {
 #firstImage, img{
 
     
-    width:350px;
+    width:340px;
     height:auto;
 }
 #firstText{
@@ -176,7 +177,8 @@ nav {
   }
 
 #reload{
- margin-top:6px;
+ margin-top:10px;
+ margin-bottom:10px;
  color:rgb(241, 153, 167);
  box-shadow: 2px 2px 7px 0px gray;
  padding:5px;
