@@ -2225,6 +2225,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			
 
 			#footer ul.menu li {
 				border-left: none;
@@ -2317,6 +2318,13 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			#intro{
+				background-image: url("images/overlay.png"), url("../../images/introsmall.jpg");
+			}
+			#two {
+		        background: url("images/overlay.png"), url("../../images/twosmall.jpg");
+
+			}
 
 			#contact .box {
 				padding: 1.5em 1.5em 2em 1.5em;
@@ -2330,6 +2338,15 @@ input, select, textarea {
 				padding: 1em 1em 2em 1em;
 			}
 
+		}
+		@media  screen and (min-width: 1370px) {
+			#intro{
+				background-image: url("images/overlay.png"), url("../../images/intro.jpg");
+			}
+			#two{
+		        background: url("images/overlay.png"), url("../../images/two.jpg");
+			}
+		
 		}
 .red:hover{
  color: red;
