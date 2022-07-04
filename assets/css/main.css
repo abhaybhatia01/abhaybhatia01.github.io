@@ -917,6 +917,7 @@ input, select, textarea {
 /* Icon */
 
 	.icon {
+		color:rgb(27, 110, 143);
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
@@ -949,6 +950,12 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+		}
+		.icon:hover{
+			color:red;
+		}
+		.black{
+			color:black;
 		}
 
 /* Image */
