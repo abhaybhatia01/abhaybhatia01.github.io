@@ -1,0 +1,93 @@
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .25rem var(--bs-purple);
+}
+.btn-primary{
+  background-color: var(--bs-purple) ;
+  border-color: var(--bs-purple);
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem var(--bs-purple) !important;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: var(--bs-indigo) !important;
+  border-color: var(--bs-indigo)!important;
+  color: #fff;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--bs-purple);
+}
+
+.text-primary {
+  color: var(--bs-purple) !important;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all ease .5s;
+  opacity: 0;
+  background: var(--bs-purple);
+}
+
+.timeline > li .timeline-image {
+  /*position: absolute;*/
+  /*z-index: 100;*/
+  /*left: 0;*/
+  /*width: 80px;*/
+  /*height: 80px;*/
+  /*margin-left: 0;*/
+  /*text-align: center;*/
+  /*color: #fff;*/
+  /*border: 7px solid #e9ecef;*/
+  /*border-radius: 100%;*/
+  background-color: var(--bs-purple);
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: black;
+}
+
+a {
+  color: var(--bs-purple);
+}
+
+a:hover {
+  color: var(--bs-indigo);
+}
+
+#mainNav .navbar-toggler {
+  /*font-size: 12px;*/
+  /*right: 0;*/
+  /*padding: 13px;*/
+  /*text-transform: uppercase;*/
+  /*color: #fff;*/
+  /*border: 0;*/
+  background-color: var(--bs-purple);
+  /*font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 0.3;
+}
+
+ul.social-buttons li a {
+  /*font-size: 20px;*/
+  /*line-height: 40px;*/
+  /*display: block;*/
+  /*width: 40px;*/
+  /*height: 40px;*/
+  /*transition: all .3s;*/
+  /*color: #fff;*/
+  /*border-radius: 100%;*/
+  /*outline: none;*/
+  background-color: var(--bs-purple);
+}
+
+
+.portfolio-modal .modal-content {
+  padding:10px  0;
+}
