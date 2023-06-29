@@ -99,7 +99,7 @@ ul.social-buttons li a {
 }
 
 
-@media (min-width=1000) {
+@media (min-width:1000px) {
   ::-webkit-scrollbar{
     width: 0.3rem;
    }
