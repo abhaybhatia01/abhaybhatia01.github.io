@@ -147,29 +147,35 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-4 portfolio-item" data-aos="fade-up" data-aos-duration="700"><a class="portfolio-link" href="#allcampModal" data-bs-toggle="modal">
-                        <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
-                        </div>
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="assets/img/portfolio/allcamp.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/portfolio/allcamp.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="assets/img/portfolio/allcamp.png" class="d-block w-100" alt="...">
-                              </div>
+                    <!-- <div data-bss-hover-animate="bounce" class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
+                    </div> -->
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner " >
+                                
+                              <div class="carousel-item active" data-bs-interval="2000" >
+                                <div data-bss-hover-animate="bounce" class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i> </div>
+                                    <div class="portfolio-hover-content">click to open</div>
+                                </div>
+                                <img src="assets/img/portfolio/allcamp.png"  class="d-block w-100" alt="...">
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                  <div data-bss-hover-animate="bounce" class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
+                                  </div>
+                                <img src="assets/img/portfolio/allcamp2.png" width="295.984px" height="166.406px " class="d-block w-100" alt="...">
+                              </div>
+                              
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
-                            </button>
+                            </button> -->
                           </div>
                         <!-- <img class="img-fluid" src="assets/img/portfolio/allcamp.png"> -->
                     </a>
@@ -390,13 +396,16 @@
                 <button class="btn btn-primary ms-auto me-4" type="button" data-bs-dismiss="modal" ><i class="fa fa-times"></i></button>
                 <div class="container">
                     <div class="row">
+                        <h2 class="text-uppercase mb-0">AllCamp</h2>
+                                <p class="text-muted item-intro mt-0">A full stack web application </p>
+                        <div class="project-app-screen-wrapper">
+                            <iframe class="project-app-screen" src="https://all-camp.vercel.app/campgrounds"  title="Your App"></iframe>
+                        </div>
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase mb-0">AllCamp</h2>
-                                <p class="text-muted item-intro mt-0">A full stack web application </p>
-                                <iframe src="https://all-camp.vercel.app/campgrounds" width="600" height="400" title="Your App"></iframe>
-
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/allcamp.png">
+                                
+                                
+                                <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/allcamp.png"> -->
                                 <p>
                                     <h3>features</h3>
                                     <br>
@@ -465,10 +474,13 @@
 
                 <div class="container">
                     <div class="row">
+                        <h2 class="text-uppercase">Banking App</h2>  
+                        <p class="text-muted item-intro">This is a manly backend project that was given as a project :
+                        <div class="project-app-screen-wrapper">
+                            <iframe class="project-app-screen" src="https://bankapp-u2j7.onrender.com/"  title="Your App"></iframe>
+                        </div>
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Banking App</h2>  
-                                <p class="text-muted item-intro">This is a manly backend project that was given as a project :
                                 </p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bankapp.png">
                                 <p> 
                                     <br>From services section Go to the view customers page.

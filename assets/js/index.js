@@ -19,7 +19,35 @@
 //       carousel.cycle();
 //     });
 //   });
+
+// const dropdown = document.querySelector('button.carousel-control-prev');
+// const prevIcon = document.querySelector('.portfolio-item');
+// const modelOpen = document.querySelector('.carousel-control-prev-icon ');
+
+// // dropdown.addEventListener('click', function(event) {
+// //     const composed = event.composedPath()
+// //     event.stopPropagation();
+
+// //     console.log(composed)
+// // });
+// // prevIcon.addEventListener('click', function(event) {
+// //     console.log(event)
+// //     event.stopPropagation();
+// // },{ capture: true });
   
+
+// document.querySelector(".portfolio-link").addEventListener("click", function(event) {
+//     console.log(event)
+//     event.preventDefault(); 
+//     // Prevents the default behavior of the link
+//     // Your additional code here
+//   },{capture:true});
+var hoverAnimationTriggerList = [].slice.call(document.querySelectorAll('[data-bss-hover-animate]'));
+var hoverAnimationList = hoverAnimationTriggerList.forEach(function (hoverAnimationEl) {
+    hoverAnimationEl.classList.add('alwaysAnimate') 
+
+})
+
   
   
   

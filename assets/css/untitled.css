@@ -29,8 +29,18 @@
   width: 100%;
   height: 100%;
   transition: all ease .5s;
-  opacity: 0;
+  background-color: #6e42c154;
+  opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 0.3;
   background: var(--bs-purple);
+}
+
+.portfolio-hover-content i{
+  opacity: 1;
+  color: white;
 }
 
 .timeline > li .timeline-image {
@@ -68,10 +78,6 @@ a:hover {
   /*border: 0;*/
   background-color: var(--bs-purple);
   /*font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;*/
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 0.3;
 }
 
 ul.social-buttons li a {
@@ -113,4 +119,77 @@ ul.social-buttons li a {
    ::-webkit-scrollbar-track{
      background-color: white;
    }
+}
+.carousel-item img{
+  width:295px;
+  height:190px ;
+  aspect-ratio:295/190;
+  object-fit: cover;
+}
+.project-app-screen-wrapper{
+    box-shadow: 7px 7px 40px 0px #000;
+    border-radius: 10px;
+  width: 100%;
+  height: 85vh;
+  padding:0px 0px;
+}
+.project-app-screen{
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.alwaysAnimate{
+animation: myAnim 2s ease  infinite;
+}
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
