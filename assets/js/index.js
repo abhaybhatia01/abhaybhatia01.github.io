@@ -42,12 +42,26 @@
 //     // Prevents the default behavior of the link
 //     // Your additional code here
 //   },{capture:true});
-var hoverAnimationTriggerList = [].slice.call(document.querySelectorAll('[data-bss-hover-animate]'));
-var hoverAnimationList = hoverAnimationTriggerList.forEach(function (hoverAnimationEl) {
-    hoverAnimationEl.classList.add('alwaysAnimate') 
 
-})
 
-  
-  
+
+// var hoverAnimationTriggerList = [].slice.call(document.querySelectorAll('[data-bss-hover-animate]'));
+// var hoverAnimationList = hoverAnimationTriggerList.forEach(function (hoverAnimationEl) {
+//     hoverAnimationEl.classList.add('alwaysAnimate') 
+
+// })
+
+
+
+// var hoverAnimationTriggerList = document.querySelectorAll('#carouselExampleAutoplaying');
+// var hoverAnimationList = hoverAnimationTriggerList.forEach(function (hoverAnimationEl) {
+//     hoverAnimationEl.addEventListener("mouseover",(e)=>{
+//         hoverAnimationEl.querySelectorAll("img").forEach((img)=>{
+//             img.classList.add('zoom') 
+//             console.log("hello")
+//         })
+//     })
+
+
+// })
   
