@@ -64,4 +64,8 @@
 
 
 // })
-  
+document.querySelectorAll(".do-magic-container").forEach(Element=>{
+    Element.children[0].addEventListener("click",(e)=>{
+        Element.innerHTML = `  <div class="project-app-screen-wrapper"><iframe deffer class="project-app-screen" src=${Element.children[0].dataset.magicLink}  title="embedApp"> </iframe> </div>`;
+    })
+})
