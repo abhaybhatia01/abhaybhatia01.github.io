@@ -130,13 +130,15 @@ ul.social-buttons li a {
    }
 }
 .carousel-item img{
+  
   width:100%;
-  /* aspect-ratio:295/190; */
   /* aspect-ratio: 1366/653; */
+  aspect-ratio: 	683/384;
   height: auto ; 
   object-fit: cover;
   object-position: center center;
 }
+
 
 
 
@@ -311,7 +313,6 @@ ul.social-buttons li a {
   background-color: #292929;
   padding:0.5rem;
 }
-.carousel{ cursor: auto;}
 /* .carousel::after{
   content: "Click for more info";
   height: max-content;
@@ -538,12 +539,17 @@ ul.social-buttons li a {
 }
 
 
-.card {
+.custom-card {
   position: relative;
   background-color: #292929;
   transition: all 0.3s ease-in-out;
+   aspect-ratio: 	683/384;
+   left:0;
+   right: 0;
+  
 }
-.card:hover {
+.custom-card:hover {
+  scale: 1.05;
   box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -558,29 +564,31 @@ ul.social-buttons li a {
   width: 4em;
   height: 4em;
   transition: all 0.3s ease-in-out;
-}
-.card:hover .card__icon {
   opacity: 0;
   transform: scale(0);
 }
+.custom-card:hover .card__icon {
+  opacity: 1;
+  transform: scale(1);
+}
 
 .card__media {
-  padding: 2em 0;
+  padding: 3em 0;
 }
 .card__media svg path {
   opacity: 0;
   transition: all 0.3s ease-in-out;
   transform-origin: center center;
 }
-.card:hover .card__media svg path {
+.custom-card:hover .card__media svg path {
   -webkit-animation: fadeInScale 0.3s ease-in-out forwards;
           animation: fadeInScale 0.3s ease-in-out forwards;
 }
-.card:hover .card__media svg path:nth-child(2) {
+.custom-card:hover .card__media svg path:nth-child(2) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
-.card:hover .card__media svg path:nth-child(3) {
+.custom-card:hover .card__media svg path:nth-child(3) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
@@ -610,7 +618,7 @@ ul.social-buttons li a {
   height: 2em;
   transition: all 0.3s ease-in-out;
 }
-.card:hover .card__header-icon {
+.custom-card:hover .card__header-icon {
   opacity: 1;
   transform: translateX(0);
 }
@@ -629,7 +637,7 @@ ul.social-buttons li a {
   left: 50%;
   /* opacity: 0; */
   /* padding: 0.1rem 0.4rem; */
-  translate: -50% 0%;
+  translate: -50% -0%;
   width: 100%;
   overflow: hidden;
   height: 1rem;
@@ -654,6 +662,8 @@ translate: 0% -100%;
   transition:all 0.3s ease;
 
 }
+
+
 
 .project-icon{
   font-size: 1.4rem;
@@ -724,6 +734,9 @@ translate: 0% -100%;
   width: 100%;
   background-color: #000;
   transition:all 0.3s ease-out;
+  height: 1rem;
+  padding-block: auto;
+  margin-block: auto;
 
 }
 #portfolio .portfolio-item:hover .project-name-name,
@@ -734,17 +747,14 @@ translate: 0% -100%;
   transition:all 0.3s ease-out;
   translate: -50% 0%;
 }
-.active{
-  /* transition: scale 0.3s ease; */
-}
+/* 
 #portfolio .portfolio-item:hover .active,
 #portfolio .portfolio-item:focus .active,
 #portfolio .portfolio-item:focus-within .active,
 #portfolio .portfolio-item:active .active
  {
   scale: 1.002;
-  /* transition: scale 0.3s ease; */
-}
+} */
 #portfolio .portfolio-item .portfolio-caption {
   padding: 0rem;
   
@@ -754,6 +764,41 @@ translate: 0% -100%;
     max-width: 100%;
     margin: 0 0;
 }
+
+.carousel-control-prev{
+  height: max-content ;
+  top:50%;
+  translate: -10% -50%;
+  transition: all 0.3s ;
+  opacity: 0;
+
+}
+.carousel-control-next {
+  height: max-content ;
+  top:50%;
+  translate: 10% -50%;
+  transition: all 0.3s ;
+  opacity: 0;
+}
+
+#portfolio .portfolio-item:hover .carousel-control-prev,
+#portfolio .portfolio-item:focus .carousel-control-prev,
+#portfolio .portfolio-item:focus-within .carousel-control-prev,
+#portfolio .portfolio-item:active .carousel-control-prev
+ {
+  translate: 0% -50%;
+  opacity: 1;
+}
+#portfolio .portfolio-item:hover .carousel-control-next,
+#portfolio .portfolio-item:focus .carousel-control-next,
+#portfolio .portfolio-item:focus-within .carousel-control-next,
+#portfolio .portfolio-item:active .carousel-control-next
+ {
+  translate: 0% -50%;
+  opacity: 1;
+}
+
+
 
 
 @media (width<991px){
@@ -765,13 +810,41 @@ translate: 0% -100%;
 
 
 @media (width<768px){
-  
-
+  .carousel::after{
+    content: "Click for more info";
+    height: max-content;
+    width: max-content;
+    padding: 0.06rem  0.3rem ;
+    position: absolute;
+    transform: translateY(-100%);
+    right: 0;
+    line-height: 1;
+    z-index: 999;
+    color: white;
+    font-size:0.4rem ;
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+  .project-icons{
+    transition:all 0.3s ease;
+    translate: 0% 0%;
+    opacity: 1;
+  }
+  .carousel-control-next
+  {
+    translate: 0% -50%;
+    opacity: 1;
+  }
+  .carousel-control-prev
+  {
+    translate: 0% -50%;
+    opacity: 1;
+  }
   .link-text{
     position: absolute;
     width: max-content;
     transform: translate(-100%,0%);
   }
+
 
 }
 
@@ -861,4 +934,10 @@ translate: 0% -100%;
   .be-part h4{
     display: none;
   }
+}
+
+
+.custom{
+  aspect-ratio: 	683/384;
+
 }

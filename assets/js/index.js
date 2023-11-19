@@ -69,3 +69,16 @@ document.querySelectorAll(".do-magic-container").forEach(Element=>{
         Element.innerHTML = `  <div class="project-app-screen-wrapper"><iframe deffer class="project-app-screen" src=${Element.children[0].dataset.magicLink}  title="embedApp"> </iframe> </div>`;
     })
 })
+
+// const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+// if (mediaQuery.matches) {
+//   // The user is on a mobile device.
+// } else {
+//     document.querySelectorAll(".carousel").forEach(Element=>{
+//         Element.children[0].addEventListener("click",(e)=>{
+//             Element.innerHTML = `  <div class="project-app-screen-wrapper"><iframe deffer class="project-app-screen" src=${Element.children[0].dataset.magicLink}  title="embedApp"> </iframe> </div>`;
+//         })
+//     })
+//   // The user is not on a mobile device.
+// }
