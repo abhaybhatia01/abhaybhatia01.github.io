@@ -138,7 +138,7 @@
     <div>
     </div>
     <section class="bg-light" id="portfolio">
-        <div class="container">
+        <div class="container portfolio-container" id="portfolio-container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">projects</h2>
@@ -146,73 +146,53 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4 portfolio-item" data-aos="fade-up" data-aos-duration="700"><a class="portfolio-link" href="#allcampModal" data-bs-toggle="modal">
-                    <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
-                    </div>
+                <div class="col-sm-12 col-md-6 portfolio-item" data-aos="fade-up" data-aos-duration="700"><a class="portfolio-link" >
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner " >
-                                
-                            <div class="carousel-item active" data-bs-interval="3000">
-                                  <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                                      <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
-                                  </div>
-                                <img deffer src="assets/img/portfolio/allcamp2.png" width="295.984px" height="166.406px " class="d-block w-100" alt="...">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img deffer src="assets/img/portfolio/allcamp1.png" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item " data-bs-interval="3000" >
-                                <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i> </div>
-                                </div>
-                                <img deffer src="assets/img/portfolio/allcamp3.png"  class="d-block w-100" alt="...">
+                            <div class="carousel-item " data-bs-interval="4000">
+                                <img deffer src="assets/img/portfolio/allcamp2.png"  class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                  <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                                      <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
-                                  </div>
-                                <img deffer src="assets/img/portfolio/allcamp4.png" width="295.984px" height="166.406px " class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                  <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                                      <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
-                                  </div>
-                                <img deffer src="assets/img/portfolio/allcamp5.png" width="295.984px" height="166.406px " class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                  <div data-bss-hover-animate="bounce" class="portfolio-hover">
-                                      <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
-                                  </div>
-                                <img deffer src="assets/img/portfolio/allcamp6.png" width="295.984px" height="166.406px " class="d-block w-100" alt="...">
-                            </div>
-                              
-                            </div>
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
-                            </button> -->
+                            </button>
                           </div>
-                        <!-- <img deffer class="img-fluid" src="assets/img/portfolio/allcamp.png"> -->
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>All Camp</h4>
-                        <p class="text-muted">
-                        <div class=" btn-group " role="group">
-                            <!-- <a href="https://all-camp.vercel.app/"><button class="btn btn-primary btn-sm" type="button" style="background: var(--bs-purple);border-color: var(--bs-white);">live demo</button></a>
-                            <a href="https://github.com/abhaybhatia01/AllCamp.git"><button class="btn btn-primary btn-sm" type="button" style="background: var(--bs-purple);border-color: var(--bs-white);">source code</button></a>
-                             -->
-                            <a title="Live Link" href="https://all-camp.vercel.app/" data-aos="zoom-in" data-aos-duration="400" ><i class="fa-brands   fa-chrome"></i></a> 
-                            <a title="source code" href="https://github.com/abhaybhatia01/AllCamp.git" data-aos="zoom-in" data-aos-duration="400" ><i class="fa-brands  fa-github"></i></a>
-                            <a  title="More info" href="#allcampModal" data-aos="zoom-in" data-aos-duration="400"  data-bs-toggle="modal" ><i class="fa-solid fa-circle-info"></i></a>
-
+                        <h4 class="project-name"><span class="project-name-name">All Camp</span></h4>
+                        <div class="project-icons-wrapper">
+                            <div class="project-icons">
+                                <a  target="_blank" title="Live Link" href="https://all-camp.vercel.app/" >
+                                    <div class="project-icon">
+                                        <i class="fa-brands   fa-chrome"></i> 
+                                        <span class="link-text">Website link</span>
+                                    </div>
+                                </a> 
+                                <a target="_blank" title="source code" href="https://github.com/abhaybhatia01/AllCamp.git"  >
+                                    <div class="project-icon">
+                                        <i class="fa-brands  fa-github"></i>
+                                        <span class="link-text">Source code</span>
+                                    </div>
+                                </a>
+                                <a target="_blank" title="More info" href="#allcampModal"   data-bs-toggle="modal" >
+                                    <div class="project-icon">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <span class="link-text">Show more</span>
+                                    </div>
+                                </a>
+    
+                            </div>
                         </div>
-                        </p>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-sm-6 col-md-4 portfolio-item" data-aos="fade-up" data-aos-duration="700"><a class="portfolio-link" href="#bankModal" data-bs-toggle="modal">
+                <div class="col-sm-12 col-md-6 portfolio-item" data-aos="fade-up" data-aos-duration="700"><a class="portfolio-link" href="#bankModal" data-bs-toggle="modal">
                         <div data-bss-hover-animate="bounce" class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-eye fa-3x"></i></div>
                         </div>
@@ -245,10 +225,10 @@
                                   
                             </div>
                         </div>
+                        <h4 class="project-name">Banking App</h4>
                         </a>
                         <!-- <img deffer  class="img-fluid" src="assets/img/portfolio/bankapp.png"> -->
                     <div class="portfolio-caption">
-                        <h4>Banking App</h4>
                         <p class="text-muted">
                         <div class="btn-group" role="group"> 
                             <a title="Live Link" href="https://bankapp-abhay.vercel.app/" data-aos="zoom-in" data-aos-duration="400" ><i class="fa-brands   fa-chrome"></i></a> 
@@ -294,16 +274,15 @@
                                   
                             </div>
                         </div>
+                        <h4 class="project-name">Portfolio</h4>
+
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Portfolio</h4>
                         <p class="text-muted">
                         <div class="btn-group" role="group">
                             <a title="Live Link" href="https://abhaybhatia01.github.io/" data-aos="zoom-in" data-aos-duration="400" ><i class="fa-brands   fa-chrome"></i></a> 
                             <a title="source code" href="https://github.com/abhaybhatia01/abhaybhatia01.github.io.git" data-aos="zoom-in" data-aos-duration="400" ><i class="fa-brands  fa-github"></i></a>
                             <a title="More info" href="#profolioModal" data-aos="zoom-in" data-aos-duration="400"  data-bs-toggle="modal" ><i class="fa-solid fa-circle-info"></i></a>
-
-
                             <!-- <a href="https://abhaybhatia.me/"><button class="btn btn-primary btn-sm" type="button" style="background: var(--bs-purple);border-color: var(--bs-white);">live demo</button></a>
                             <a href="https://github.com/abhaybhatia01/abhaybhatia01.github.io.git"><button class="btn btn-primary btn-sm" type="button" style="background: var(--bs-purple);border-color: var(--bs-white);">source code&nbsp;</button></a> -->
                         </div>
