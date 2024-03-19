@@ -1166,6 +1166,7 @@ translate: 0% -100%;
   transition: 200ms ease-out;
   animation: pulse 2s ease 0s infinite normal forwards;
   box-shadow: 6px 5px 29px 1px #787878;
+  z-index: 3;
 }
 
 .project-page-floating-button:hover{
@@ -1173,7 +1174,6 @@ translate: 0% -100%;
   scale: 1.1;
   transform-origin: center;
   transition:all 200ms ease-out;
-  
 }
 .project-page-floating-button img{
   color:'#fff'
